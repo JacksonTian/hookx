@@ -1,0 +1,17 @@
+{
+  "name": "hookx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "author": "Jackson Tian",
+  "license": "MIT",
+  "devDependencies": {
+    "co-mocha": "^1.1.2",
+    "expect.js": "^0.3.1",
+    "istanbul": "^0.3.22",
+    "mocha": "^2.3.3"
+  }
+}
