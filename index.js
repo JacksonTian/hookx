@@ -71,7 +71,7 @@ hook.before = function (yieldable, before) {
  * Example:
  * ```js
  * var counter = 0;
- * var query = hook(query, function * (sql) {
+ * var query = hook.after(query, function * (sql) {
  *   counter--;
  * });
  * yield query(sql);

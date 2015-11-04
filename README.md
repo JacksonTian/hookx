@@ -10,7 +10,7 @@ $ npm install hookx --save
 ```
 
 ## Usage
-require it first. 
+require it first.
 
 ```js
 var hook = require('hookx');
@@ -49,7 +49,7 @@ Hook with `after` business logic.
 
 ```js
 var counter = 0;
-var query = hook(query, function * (sql) {
+var query = hook.after(query, function * (sql) {
   counter--;
 });
 yield query(sql);
