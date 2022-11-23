@@ -1,6 +1,20 @@
 # hookx
 Hook(x) with Power.
 
+[![NPM version][npm-image]][npm-url]
+[![build status][github-action-image]][github-action-url]
+[![codecov][cov-image]][cov-url]
+[![npm download][download-image]][download-url]
+
+[npm-image]: https://img.shields.io/npm/v/hookx.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/hookx
+[github-action-image]: https://img.shields.io/travis/JacksonTian/hookx.svg?style=flat-square
+[github-action-url]: https://travis-ci.org/JacksonTian/hookx
+[cov-image]: https://codecov.io/gh/JacksonTian/hookx/branch/master/graph/badge.svg
+[cov-url]: https://codecov.io/gh/JacksonTian/hookx
+[download-image]: https://img.shields.io/npm/dm/hookx.svg?style=flat-square
+[download-url]: https://npmjs.org/package/hookx
+
 ## Installation
 
 Install it with npm first.
@@ -10,49 +24,49 @@ $ npm install hookx --save
 ```
 
 ## Usage
-require it first.
+Require it first.
 
 ```js
-var hook = require('hookx');
+const { hook, before, after } = require('hookx');
 ```
 
-you should have a yieldable instance defined like this:
+You should have an async function defined like this:
 
 ```js
-var query = function * (sql) {
+var query = async function (sql) {
   // TODO
 };
 ```
 
-Hook it with before and after business logic.
+Hook it with `before` and `after` business logic.
 
 ```js
-var query = hook(query, function * (sql) {
+var query = hook(query, async function (sql) {
   console.time(sql);
-}, function * (sql) {
+}, async function (sql) {
    console.timeEnd(sql);
 });
-yield query(sql); // call the hooked function like origin
+await query(sql); // call the hooked async function like origin
 ```
 
-Hook with before business logic.
+Hook with `before` business logic.
 
 ```js
 var counter = 0;
-var query = hook.before(query, function * (sql) {
+var query = before(query, async function (sql) {
   counter++;
 });
-yield query(sql);
+await query(sql);
 ```
 
 Hook with `after` business logic.
 
 ```js
 var counter = 0;
-var query = hook.after(query, function * (sql) {
+var query = after(query, async function (sql) {
   counter--;
 });
-yield query(sql);
+await query(sql);
 ```
 
 ## License
