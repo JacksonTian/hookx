@@ -32,5 +32,6 @@
   "bugs": {
     "url": "https://github.com/JacksonTian/hookx/issues"
   },
-  "homepage": "https://github.com/JacksonTian/hookx#readme"
+  "homepage": "https://github.com/JacksonTian/hookx#readme",
+  "files": ["lib"]
 }
