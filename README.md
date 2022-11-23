@@ -2,14 +2,14 @@
 Hook(x) with Power.
 
 [![NPM version][npm-image]][npm-url]
+[![npm download][download-image]][download-url]
 [![build status][github-action-image]][github-action-url]
 [![codecov][cov-image]][cov-url]
-[![npm download][download-image]][download-url]
 
 [npm-image]: https://img.shields.io/npm/v/hookx.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/hookx
-[github-action-image]: https://img.shields.io/travis/JacksonTian/hookx.svg?style=flat-square
-[github-action-url]: https://travis-ci.org/JacksonTian/hookx
+[github-action-image]: https://github.com/JacksonTian/hookx/actions/workflows/node.js.yml/badge.svg
+[github-action-url]: https://github.com/JacksonTian/hookx/actions/workflows/node.js.yml
 [cov-image]: https://codecov.io/gh/JacksonTian/hookx/branch/master/graph/badge.svg
 [cov-url]: https://codecov.io/gh/JacksonTian/hookx
 [download-image]: https://img.shields.io/npm/dm/hookx.svg?style=flat-square
