@@ -1,6 +1,6 @@
 {
   "name": "hookx",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Hook(x) with Power.",
   "main": "lib/index.js",
   "scripts": {
@@ -11,8 +11,9 @@
   "author": "Jackson Tian",
   "license": "MIT",
   "devDependencies": {
-    "nyc": "^15.1.0",
-    "mocha": "^10"
+    "eslint": "^8.28.0",
+    "mocha": "^10",
+    "nyc": "^15.1.0"
   },
   "directories": {
     "test": "test"
